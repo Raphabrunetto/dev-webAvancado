@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>F1</title>
+    <h2 style="color: rgb(122, 49, 206); text-align: center;"> F1 gambling!</h2>
+    <p style="text-align: center;"> Seu saldo: <span id="saldo">100</span> créditos</p>
+
+
+    <label for="aposta">Em qual carro deseja apostar?</label>
+    <select id="aposta">
+        <option value="1">Carro 1</option>
+        <option value="2">Carro 2</option>
+        <option value="3">Carro 3</option>
+        <option value="4">Carro 4</option>
+        <option value="5">Carro 5</option>
+    </select>
+
+    <label for="valor">Valor da aposta:</label>
+    <input type="number" id="valor" min="5" max="100" value="5">
+
+    <button onclick="fazerAposta()">Apostar</button>
+    <button onclick="stopMovement()">Stop the movement</button>
+    
+</head>
+
+<body onload="init()">
+    <div class="pista">
+        <div id="car1"></div>
+        <div id="car2"></div>
+        <div id="car3"></div>
+        <div id="car4"></div>
+        <div id="car5"></div>
+    </div>
+    
+    <link rel="stylesheet" href="./src/index.css" type="text/css">
+    <script type="text/javascript" src="src/index.js"></script>
+    
+</body>
+</html>
